@@ -6,6 +6,10 @@ body {
   margin: 0;
 }
 
+.App {
+  background-color: #eee;
+}
+
 a {
   /* test autoprefixer */
   animation: MyAnimation 2s; /* IE >9, Fx >15, Op >12.0 */

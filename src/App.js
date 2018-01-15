@@ -1,6 +1,9 @@
 import { h, Component } from "preact";
 import ReduceCounter from "./ReduceCounter";
-import "./App.css";
+// test css modules
+import styles from "./App.css";
+import lessStyles from "./index.less";
+import stylStyles from "./index.styl";
 import SimpleInput from "./SimpleInput";
 import LinkedStateSimpleInput from "./LinkedStateSimpleInput";
 
@@ -9,9 +12,12 @@ const Link = ({ url }) => <a href={url}>{url}</a>;
 export default class App extends Component {
   render() {
     return (
-      <div>
+      <div className={styles.App}>
         <Link url="/hhh" />
-        <h1>Hello!11231 World 📦 🚀</h1>
+        <div className={lessStyles.box}>
+          Hello!11231 World 📦 🚀 <div>21334</div>
+        </div>
+        <a className={stylStyles.button}>1</a>
         <ReduceCounter />
         <SimpleInput />
         <LinkedStateSimpleInput />
