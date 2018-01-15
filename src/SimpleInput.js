@@ -1,6 +1,6 @@
 import { h, Component } from "preact";
 
-export default class Foo extends Component {
+export default class SimpleInput extends Component {
   updateText = e => {
     this.setState({ text: e.target.value });
   };
