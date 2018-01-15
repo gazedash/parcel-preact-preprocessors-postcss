@@ -8,10 +8,16 @@ body {
 
 .App {
   background-color: #eee;
+  display: grid;
+  grid-row-start: 2;
+  grid-template-columns: 1fr 1fr;
+  user-select: none;
+  width: fit-content;
 }
 
 a {
   /* test autoprefixer */
+  transform: scale(0.5);
   animation: MyAnimation 2s; /* IE >9, Fx >15, Op >12.0 */
 }
 

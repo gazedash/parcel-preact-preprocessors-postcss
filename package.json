@@ -5,19 +5,16 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html --open",
-    "build": "cross-env NODE_ENV=production parcel build index.html --no-minify --public-url /",
+    "build":
+      "cross-env NODE_ENV=production parcel build index.html --no-minify --public-url /",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "postcss": {
     "modules": true,
     "plugins": {
       "autoprefixer": {
-        "browsers": [
-          ">1%",
-          "last 4 versions",
-          "Firefox ESR",
-          "not ie < 9"
-        ],
+        "grid": true,
+        "browsers": ["iOS 7", "Firefox < 20"],
         "flexbox": "no-2009"
       }
     }
